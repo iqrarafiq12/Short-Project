@@ -5,115 +5,84 @@
 	padding: 0;
 	box-sizing: border-box;
 	outline: none;
-	font-family: 'Open Sans', sans-serif;
-    background: #E3FEF7;
+	font-family: 'oPEN Sans', sans-serif;
+	background: #E3FEF7;
 }
-
 .wrapper{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
 }
-
-.wrapper .cancel_btn{
-	background: #003C43;
+.wrapper .cencel_btn{
+	background: #003c43;
 	border: 0;
 	padding: 20px;
 	color: #fff;
 	font-size: 16px;
-	border-radius: 3px;
+	border-radius: 10px;
 	cursor: pointer;
-    border-radius: 10px;
 }
-
-.wrapper .cancel_btn:hover{
-	background: #082f33;
+.wrapper .cencel_btn{
+	background: #082F33;
 }
-
-.modal_popup{
+.model_popup{
 	position: relative;
 	display: none;
 }
-
-.modal_popup .bg_shadow{
+.model_popup .bg_shadow{
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0,0,0,0.8);
+	background: rgba(0,0,0,0.9);
 }
-
-.modal_popup .popup{
+.model_popup .popup{
 	background: #fff;
 	z-index: 1;
 	width: 500px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 }
-
-.modal_popup .popup .popup_head{
+.model_popup .popup .popup_head{
 	padding: 20px;
 	padding-bottom: 0;
-	font-size: 18px;
 	font-weight: 600;
 	position: relative;
+	font-size: 16px;
 }
-
-.modal_popup .popup .popup_head .close_btn{
-	position: absolute;
-	top: 15px;
-	right: 15px;
-	background: url("CLOSE.png") no-repeat;
-	width: 16px;
-	height: 16px;
-	border: 0;
-	cursor: pointer;
-}
-
-.modal_popup .popup .popup_head .close_btn:hover{
-	opacity: 0.5;
-}
-
-.modal_popup .popup .popup_body{
+.model_popup .popup .popup_body{
 	padding: 20px;
 	min-height: 180px;
 	font-size: 14px;
 	line-height: 22px;
 }
-
-.modal_popup .popup .popup_foot{
-	display: flex;
+.model_popup .popup .popup_foot {
+   display: flex;
 }
-
-.modal_popup .popup .popup_foot .popup_btn{
+.model_popup .popup .popup_foot .popup_btn{
 	width: 50%;
 	border: 0;
 	padding: 20px;
 	cursor: pointer;
 }
-
-.modal_popup .popup .popup_foot .popup_cancel_btn{
-	background: #003C43;
-    color: #fff;
-}
-
-.modal_popup .popup .popup_foot .popup_cancel_btn:hover{
-	background: #0a373c;
-}
-
-.modal_popup .popup .popup_foot .popup_confirm_btn{
-	background: #000000;
+.model_popup .popup .popup_foot .popup_cencel_btn{
+	background: #003c43;
 	color: #fff;
 }
-
-.modal_popup .popup .popup_foot .popup_confirm_btn:hover{
-	background: #1c1c1c;
+.model_popup .popup .popup_foot .popup_cencel_btn:hover{
+	background: #0a373c;
 }
-
-.modal_popup.active{
+.model_popup .popup .popup_foot .popup_confirm_btn{
+	background: #000;
+	color: #fff;
+}
+.model_popup .popup .popup_foot .popup_confirm_btn:hover{
+	background: #171717;
+}
+.model_popup.active{
 	display: block;
 }
